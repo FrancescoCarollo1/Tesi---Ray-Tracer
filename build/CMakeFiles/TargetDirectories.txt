@@ -1,0 +1,13 @@
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles/example_sdl3_opengl3.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles/edit_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles/rebuild_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/CMakeFiles/edit_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/CMakeFiles/rebuild_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/CMakeFiles/IMGUI.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/CMakeFiles/edit_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/CMakeFiles/rebuild_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/CMakeFiles/SDL3-shared.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/CMakeFiles/SDL_uclibc.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/CMakeFiles/edit_cache.dir
+/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/CMakeFiles/rebuild_cache.dir
