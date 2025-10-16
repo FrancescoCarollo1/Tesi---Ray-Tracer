@@ -55,11 +55,11 @@ set_target_properties(SDL3::SDL3_test PROPERTIES
   INTERFACE_SDL_VERSION "SDL3"
 )
 
-# Import target "SDL3::SDL3_test" for configuration ""
-set_property(TARGET SDL3::SDL3_test APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "SDL3::SDL3_test" for configuration "Debug"
+set_property(TARGET SDL3::SDL3_test APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(SDL3::SDL3_test PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/libSDL3_test.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
+  IMPORTED_LOCATION_DEBUG "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL/libSDL3_test.a"
   )
 
 # Make sure the targets which have been exported in some other

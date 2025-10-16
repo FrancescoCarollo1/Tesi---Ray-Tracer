@@ -73,15 +73,15 @@ CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o: CMakeFiles/example_sdl3_open
 CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/src/main.cpp
 CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o: CMakeFiles/example_sdl3_opengl3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o -MF CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o.d -o CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o -MF CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o.d -o CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp"
 
 CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp" > CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp" > CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.i
 
 CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp" -o CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/src/main.cpp" -o CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.s
 
 # Object files for target example_sdl3_opengl3
 example_sdl3_opengl3_OBJECTS = \

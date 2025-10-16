@@ -73,99 +73,99 @@ libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o: libs/imgui/libs/CMa
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_demo.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_demo.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_draw.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_draw.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_tables.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_tables.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui_widgets.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui_widgets.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/imgui.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/imgui.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp" > CMakeFiles/IMGUI.dir/imgui/imgui.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/imgui.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/imgui.cpp" -o CMakeFiles/IMGUI.dir/imgui/imgui.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp" > CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp" > CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp" -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_opengl3.cpp" -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_opengl3.cpp.s
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/flags.make
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o: libs/imgui/libs/CMakeFiles/IMGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o -MF CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o.d -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp"
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp" > CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp" > CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.i
 
 libs/imgui/libs/CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp" -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/imgui/backends/imgui_impl_sdl3.cpp" -o CMakeFiles/IMGUI.dir/imgui/backends/imgui_impl_sdl3.cpp.s
 
 # Object files for target IMGUI
 IMGUI_OBJECTS = \

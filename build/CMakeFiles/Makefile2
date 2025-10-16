@@ -131,8 +131,8 @@ libs/imgui/libs/SDL/clean: libs/imgui/libs/SDL/CMakeFiles/SDL_uclibc.dir/clean
 # Target rules for target CMakeFiles/example_sdl3_opengl3.dir
 
 # All Build rule for target.
-CMakeFiles/example_sdl3_opengl3.dir/all: libs/imgui/libs/CMakeFiles/IMGUI.dir/all
 CMakeFiles/example_sdl3_opengl3.dir/all: libs/imgui/libs/SDL/CMakeFiles/SDL3-shared.dir/all
+CMakeFiles/example_sdl3_opengl3.dir/all: libs/imgui/libs/CMakeFiles/IMGUI.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=100 "Built target example_sdl3_opengl3"

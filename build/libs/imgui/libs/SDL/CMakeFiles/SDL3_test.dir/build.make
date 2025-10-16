@@ -73,141 +73,141 @@ libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o: libs/
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_assert.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_assert.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_common.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_common.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_compare.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_compare.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_crc32.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_crc32.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_font.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_font.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_fuzzer.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_fuzzer.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_harness.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_harness.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_log.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_log.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_md5.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_md5.c.s
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/flags.make
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o: /home/francis/Documents/Uni/III\ Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o: libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c"
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.o -c "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c"
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.i"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.i
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c" > CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.i
 
 libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.s"
-	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/lib64/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.s
+	cd "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/libs/imgui/libs/SDL" && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/libs/imgui/libs/SDL/src/test/SDL_test_memory.c" -o CMakeFiles/SDL3_test.dir/src/test/SDL_test_memory.c.s
 
 # Object files for target SDL3_test
 SDL3_test_OBJECTS = \
