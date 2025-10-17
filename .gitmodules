@@ -1,3 +1,9 @@
 [submodule "libs/imgui"]
 	path = libs/imgui
 	url = https://github.com/Pesc0/imgui-cmake.git
+[submodule "libs/stb"]
+	path = libs/stb
+	url = https://github.com/nothings/stb.git
+[submodule "libs/Ray-Tracing"]
+	path = libs/Ray-Tracing
+	url = https://github.com/FrancescoCarollo1/Ray-Tracing.git
