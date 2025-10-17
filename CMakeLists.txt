@@ -7,7 +7,7 @@ project(RayTracer LANGUAGES C CXX)
 add_subdirectory(libs/imgui)
 
 
-#=================== esempioMPLE ===================
+# =================== EXAMPLE ===================
 
 add_executable(esempio)
 target_sources(esempio PUBLIC src/main.cpp)
