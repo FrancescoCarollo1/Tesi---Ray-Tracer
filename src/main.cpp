@@ -22,9 +22,65 @@
 #include "../libs/emscripten/emscripten_mainloop_stub.h"
 #endif
 
+#define _CRT_SECURE_NO_WARNINGS
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
+// Simple helper function to load an image into a OpenGL texture with common settings
+bool LoadTextureFromMemory(const void* data, size_t data_size, GLuint* out_texture, int* out_width, int* out_height)
+{
+    // Load from file
+    int image_width = 0;
+    int image_height = 0;
+    unsigned char* image_data = stbi_load_from_memory((const unsigned char*)data, (int)data_size, &image_width, &image_height, NULL, 4);
+    if (image_data == NULL)
+        return false;
+
+    // Create a OpenGL texture identifier
+    GLuint image_texture;
+    glGenTextures(1, &image_texture);
+    glBindTexture(GL_TEXTURE_2D, image_texture);
+
+    // Setup filtering parameters for display
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    // Upload pixels into texture
+    glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
+    stbi_image_free(image_data);
+
+    *out_texture = image_texture;
+    *out_width = image_width;
+    *out_height = image_height;
+
+    return true;
+}
+
+// Open and read a file, then forward to LoadTextureFromMemory()
+bool LoadTextureFromFile(const char* file_name, GLuint* out_texture, int* out_width, int* out_height)
+{
+    FILE* f = fopen(file_name, "rb");
+    if (f == NULL)
+        return false;
+    fseek(f, 0, SEEK_END);
+    size_t file_size = (size_t)ftell(f);
+    if (file_size == -1)
+        return false;
+    fseek(f, 0, SEEK_SET);
+    void* file_data = IM_ALLOC(file_size);
+    fread(file_data, 1, file_size, f);
+    fclose(f);
+    bool ret = LoadTextureFromMemory(file_data, file_size, out_texture, out_width, out_height);
+    IM_FREE(file_data);
+    return ret;
+}
+
+
 // Main code
 int main(int, char**)
-{
+{ 
+   
     // Setup SDL
     // [If using SDL_MAIN_USE_CALLBACKS: all code below until the main loop starts would likely be your SDL_AppInit() function]
     if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_GAMEPAD))
@@ -108,6 +164,19 @@ int main(int, char**)
     ImGui_ImplSDL3_InitForOpenGL(window, gl_context);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
+    int my_image_width = 0;
+    int my_image_height = 0;
+    GLuint my_image_texture = 0;
+    bool ret = LoadTextureFromFile("../immagini/prova1_spazio_240.jpg", &my_image_texture, &my_image_width, &my_image_height);
+
+    if (!ret)
+    {
+        printf("ERRORE: Impossibile caricare l'immagine '../immagini/prova1_spazio_240.jpg'\n");
+        printf("Assicurati di aver creato una cartella 'immagini' nella cartella principale del progetto (accanto a 'src') e che il file sia lì.\n");
+    }
+
+    // Load Fonts
+    // ...
     // Load Fonts
     // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
     // - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple.
@@ -205,7 +274,12 @@ int main(int, char**)
                 show_another_window = false;
             ImGui::End();
         }
-
+        ImGui::Begin("OpenGL Texture Text");
+        ImGui::Text("pointer = %x", my_image_texture);
+        ImGui::Text("size = %d x %d", my_image_width, my_image_height);
+        ImGui::Image((ImTextureID)(intptr_t)my_image_texture, ImVec2(my_image_width, my_image_height));
+        ImGui::End();
+     
         // Rendering
         ImGui::Render();
         glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
@@ -213,6 +287,8 @@ int main(int, char**)
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         SDL_GL_SwapWindow(window);
+
+
     }
 #ifdef __EMSCRIPTEN__
     EMSCRIPTEN_MAINLOOP_END;

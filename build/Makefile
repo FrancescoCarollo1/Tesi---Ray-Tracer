@@ -118,17 +118,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named example_sdl3_opengl3
+# Target rules for targets named esempio
 
 # Build rule for target.
-example_sdl3_opengl3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example_sdl3_opengl3
-.PHONY : example_sdl3_opengl3
+esempio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esempio
+.PHONY : esempio
 
 # fast build rule for target.
-example_sdl3_opengl3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/build
-.PHONY : example_sdl3_opengl3/fast
+esempio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/build
+.PHONY : esempio/fast
 
 #=============================================================================
 # Target rules for targets named IMGUI
@@ -187,7 +187,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -195,7 +195,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -203,7 +203,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -218,7 +218,7 @@ help:
 	@echo "... SDL3-shared"
 	@echo "... SDL3_test"
 	@echo "... SDL_uclibc"
-	@echo "... example_sdl3_opengl3"
+	@echo "... esempio"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

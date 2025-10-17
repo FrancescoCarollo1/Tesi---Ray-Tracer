@@ -7,9 +7,9 @@ project(RayTracer LANGUAGES C CXX)
 add_subdirectory(libs/imgui)
 
 
-#=================== EXAMPLE ===================
+#=================== esempioMPLE ===================
 
-add_executable(example_sdl3_opengl3)
-target_sources(example_sdl3_opengl3 PUBLIC src/main.cpp)
-target_link_libraries(example_sdl3_opengl3 IMGUI)
-set_target_properties(example_sdl3_opengl3 PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+add_executable(esempio)
+target_sources(esempio PUBLIC src/main.cpp)
+target_link_libraries(esempio IMGUI)
+set_target_properties(esempio PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})

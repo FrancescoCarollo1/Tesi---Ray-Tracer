@@ -113,7 +113,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/example_sdl3_opengl3.dir/DependInfo.cmake"
+  "CMakeFiles/esempio.dir/DependInfo.cmake"
   "libs/imgui/libs/CMakeFiles/IMGUI.dir/DependInfo.cmake"
   "libs/imgui/libs/SDL/CMakeFiles/SDL3-shared.dir/DependInfo.cmake"
   "libs/imgui/libs/SDL/CMakeFiles/SDL3_test.dir/DependInfo.cmake"

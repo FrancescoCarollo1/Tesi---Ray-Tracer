@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/example_sdl3_opengl3.dir/all
+all: CMakeFiles/esempio.dir/all
 all: libs/imgui/all
 .PHONY : all
 
@@ -72,7 +72,7 @@ preinstall: libs/imgui/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/example_sdl3_opengl3.dir/clean
+clean: CMakeFiles/esempio.dir/clean
 clean: libs/imgui/clean
 .PHONY : clean
 
@@ -128,31 +128,31 @@ libs/imgui/libs/SDL/clean: libs/imgui/libs/SDL/CMakeFiles/SDL_uclibc.dir/clean
 .PHONY : libs/imgui/libs/SDL/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/example_sdl3_opengl3.dir
+# Target rules for target CMakeFiles/esempio.dir
 
 # All Build rule for target.
-CMakeFiles/example_sdl3_opengl3.dir/all: libs/imgui/libs/SDL/CMakeFiles/SDL3-shared.dir/all
-CMakeFiles/example_sdl3_opengl3.dir/all: libs/imgui/libs/CMakeFiles/IMGUI.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=100 "Built target example_sdl3_opengl3"
-.PHONY : CMakeFiles/example_sdl3_opengl3.dir/all
+CMakeFiles/esempio.dir/all: libs/imgui/libs/CMakeFiles/IMGUI.dir/all
+CMakeFiles/esempio.dir/all: libs/imgui/libs/SDL/CMakeFiles/SDL3-shared.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" --progress-num=100 "Built target esempio"
+.PHONY : CMakeFiles/esempio.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/example_sdl3_opengl3.dir/rule: cmake_check_build_system
+CMakeFiles/esempio.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" 96
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/example_sdl3_opengl3.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/esempio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/francis/Documents/Uni/III Anno/TESI/Tesi---Ray-Tracer/build/CMakeFiles" 0
-.PHONY : CMakeFiles/example_sdl3_opengl3.dir/rule
+.PHONY : CMakeFiles/esempio.dir/rule
 
 # Convenience name for target.
-example_sdl3_opengl3: CMakeFiles/example_sdl3_opengl3.dir/rule
-.PHONY : example_sdl3_opengl3
+esempio: CMakeFiles/esempio.dir/rule
+.PHONY : esempio
 
 # clean rule for target.
-CMakeFiles/example_sdl3_opengl3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example_sdl3_opengl3.dir/build.make CMakeFiles/example_sdl3_opengl3.dir/clean
-.PHONY : CMakeFiles/example_sdl3_opengl3.dir/clean
+CMakeFiles/esempio.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esempio.dir/build.make CMakeFiles/esempio.dir/clean
+.PHONY : CMakeFiles/esempio.dir/clean
 
 #=============================================================================
 # Target rules for target libs/imgui/libs/CMakeFiles/IMGUI.dir
