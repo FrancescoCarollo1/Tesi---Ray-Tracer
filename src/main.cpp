@@ -24,13 +24,26 @@
 
 #include "stb_image.h"
 
+#include <vector> 
+
+extern "C" {
+    #include "scene.h"
+    #include "render.h" 
+    #include "ppm.h"   
+    #include "color.h"
+}
+
+
+
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromMemory(const void* data, size_t data_size, GLuint* out_texture, int* out_width, int* out_height)
 {
+
+
     // Load from file
     int image_width = 0;
     int image_height = 0;
-    unsigned char* image_data = stbi_load_from_memory((const unsigned char*)data, (int)data_size, &image_width, &image_height, NULL, 4);
+    unsigned char* image_data = stbi_load_from_memory((const unsigned char*)data, (int)data_size, &image_width, &image_height, NULL, 3);
     if (image_data == NULL)
         return false;
 
@@ -45,7 +58,7 @@ bool LoadTextureFromMemory(const void* data, size_t data_size, GLuint* out_textu
 
     // Upload pixels into texture
     glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, image_width, image_height, 0, GL_RGB, GL_UNSIGNED_BYTE, image_data);
     stbi_image_free(image_data);
 
     *out_texture = image_texture;
@@ -162,16 +175,54 @@ int main(int, char**)
     ImGui_ImplSDL3_InitForOpenGL(window, gl_context);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
+    int width = 1280;
+    int height = 480;
+    const char *scene_file = "../libs/Ray-Tracing/prove_txt/prova1.txt";
+
+    Color *pixel_data = (Color *)malloc(width * height * sizeof(Color));
+    if (pixel_data == NULL) {
+        printf("Errore nell'allocazione della memoria\n");
+        exit(EXIT_FAILURE);
+    }
+    memset(pixel_data, 0, width * height * sizeof(Color));
+
+    Scene *scene = create_empty_scene();
+    if (scene == NULL) {
+        printf("Errore nell'allocazione della memoria\n");
+        exit(EXIT_FAILURE);
+    }
+    if ( read_scene(scene_file, scene) != 0) {
+        printf("Errore nel caricamento della scena\n");
+        delete_scene(scene);
+        exit(EXIT_FAILURE);
+    }
+
+    omp_render_scene(scene, pixel_data, width, height);
+
+    // Create a OpenGL texture identifier
+    GLuint image_texture;
+    glGenTextures(1, &image_texture);
+    glBindTexture(GL_TEXTURE_2D, image_texture);
+
+    // Upload pixels into texture
+    glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, pixel_data);
+    free(pixel_data);
+
     int my_image_width = 0;
     int my_image_height = 0;
-    GLuint my_image_texture = 0;
-    bool ret = LoadTextureFromFile("../libs/Ray-Tracing/renders/immagine1.ppm", &my_image_texture, &my_image_width, &my_image_height);
+    int my_image_texture = 0;
 
-    if (!ret)
-    {
-        printf("ERRORE: Impossibile caricare l'immagine '../libs/Ray-Tracing/renders/immagine1.ppm'\n");
-        printf("Assicurati di aver creato una cartella 'immagini' nella cartella principale del progetto (accanto a 'src') e che il file sia lì.\n");
-    }
+    ////scrivi_immagine("immagine1.ppm", pixel_data, width, height);    
+    //int my_image_width = 0;
+    //int my_image_height = 0;
+    //GLuint my_image_texture = 0;
+    //bool ret = LoadTextureFromMemory(pixel_data, width * height * sizeof(Color), &my_image_texture, &my_image_width, &my_image_height);
+    //bool ret = LoadTextureFromFile("../libs/Ray-Tracing/renders/immagine1.ppm", &my_image_texture, &my_image_width, &my_image_height);
+
+    delete_scene(scene);
+
+    
 
 
     // Load Fonts

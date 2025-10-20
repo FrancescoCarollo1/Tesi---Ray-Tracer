@@ -11,6 +11,5 @@ add_subdirectory(libs)
 
 add_executable(esempio)
 target_sources(esempio PUBLIC src/main.cpp)
-target_link_libraries(esempio IMGUI stb_image )
-target_link_libraries(esempio ray_tracer)
+target_link_libraries(esempio IMGUI stb_image ray_tracer )
 set_target_properties(esempio PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
