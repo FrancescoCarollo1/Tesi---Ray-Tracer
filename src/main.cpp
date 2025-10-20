@@ -175,7 +175,7 @@ int main(int, char**)
     ImGui_ImplSDL3_InitForOpenGL(window, gl_context);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
-    int width = 1280;
+    int width = 980;
     int height = 480;
     const char *scene_file = "../libs/Ray-Tracing/prove_txt/prova1.txt";
 
@@ -204,22 +204,15 @@ int main(int, char**)
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);
 
+
+    // Setup filtering parameters for display
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
     // Upload pixels into texture
     glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, pixel_data);
     free(pixel_data);
-
-    int my_image_width = 0;
-    int my_image_height = 0;
-    int my_image_texture = 0;
-
-    ////scrivi_immagine("immagine1.ppm", pixel_data, width, height);    
-    //int my_image_width = 0;
-    //int my_image_height = 0;
-    //GLuint my_image_texture = 0;
-    //bool ret = LoadTextureFromMemory(pixel_data, width * height * sizeof(Color), &my_image_texture, &my_image_width, &my_image_height);
-    //bool ret = LoadTextureFromFile("../libs/Ray-Tracing/renders/immagine1.ppm", &my_image_texture, &my_image_width, &my_image_height);
-
     delete_scene(scene);
 
     
@@ -323,9 +316,9 @@ int main(int, char**)
             ImGui::End();
         }
         ImGui::Begin("OpenGL Texture Text");
-        ImGui::Text("pointer = %x", my_image_texture);
-        ImGui::Text("size = %d x %d", my_image_width, my_image_height);
-        ImGui::Image((ImTextureID)(intptr_t)my_image_texture, ImVec2(my_image_width, my_image_height));
+        ImGui::Text("pointer = %x", image_texture);
+        ImGui::Text("size = %d x %d", width, height);
+        ImGui::Image((ImTextureID)(intptr_t)image_texture, ImVec2(width, height));
         ImGui::End();
      
         // Rendering
