@@ -165,16 +165,15 @@ int main(int, char**)
     int my_image_width = 0;
     int my_image_height = 0;
     GLuint my_image_texture = 0;
-    bool ret = LoadTextureFromFile("../immagini/prova1_spazio_240.jpg", &my_image_texture, &my_image_width, &my_image_height);
+    bool ret = LoadTextureFromFile("../libs/Ray-Tracing/renders/immagine1.ppm", &my_image_texture, &my_image_width, &my_image_height);
 
     if (!ret)
     {
-        printf("ERRORE: Impossibile caricare l'immagine '../immagini/prova1_spazio_240.jpg'\n");
+        printf("ERRORE: Impossibile caricare l'immagine '../libs/Ray-Tracing/renders/immagine1.ppm'\n");
         printf("Assicurati di aver creato una cartella 'immagini' nella cartella principale del progetto (accanto a 'src') e che il file sia lì.\n");
     }
 
-    // Load Fonts
-    // ...
+
     // Load Fonts
     // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
     // - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple.

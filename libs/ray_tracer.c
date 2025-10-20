@@ -1,0 +1,11 @@
+#define raytracer_c
+#include "color.h"
+#include "ppm.h"
+#include "render.h"
+#include "scene.h"
+#include "vec3.h"
+#include "raytracer_api.h"
+#include <omp.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
