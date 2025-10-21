@@ -24,26 +24,25 @@
 
 #include "stb_image.h"
 
-#include <vector> 
+#include <vector>
 
-extern "C" {
+extern "C"
+{
     #include "scene.h"
-    #include "render.h" 
-    #include "ppm.h"   
+    #include "render.h"
+    #include "ppm.h"
     #include "color.h"
 }
 
 
-
 // Simple helper function to load an image into a OpenGL texture with common settings
-bool LoadTextureFromMemory(const void* data, size_t data_size, GLuint* out_texture, int* out_width, int* out_height)
+bool LoadTextureFromMemory(const void *data, size_t data_size, GLuint *out_texture, int *out_width, int *out_height)
 {
-
 
     // Load from file
     int image_width = 0;
     int image_height = 0;
-    unsigned char* image_data = stbi_load_from_memory((const unsigned char*)data, (int)data_size, &image_width, &image_height, NULL, 3);
+    unsigned char *image_data = stbi_load_from_memory((const unsigned char *)data, (int)data_size, &image_width, &image_height, NULL, 3);
     if (image_data == NULL)
         return false;
 
@@ -69,9 +68,9 @@ bool LoadTextureFromMemory(const void* data, size_t data_size, GLuint* out_textu
 }
 
 // Open and read a file, then forward to LoadTextureFromMemory()
-bool LoadTextureFromFile(const char* file_name, GLuint* out_texture, int* out_width, int* out_height)
+bool LoadTextureFromFile(const char *file_name, GLuint *out_texture, int *out_width, int *out_height)
 {
-    FILE* f = fopen(file_name, "rb");
+    FILE *f = fopen(file_name, "rb");
     if (f == NULL)
         return false;
     fseek(f, 0, SEEK_END);
@@ -79,7 +78,7 @@ bool LoadTextureFromFile(const char* file_name, GLuint* out_texture, int* out_wi
     if (file_size == -1)
         return false;
     fseek(f, 0, SEEK_SET);
-    void* file_data = IM_ALLOC(file_size);
+    void *file_data = IM_ALLOC(file_size);
     fread(file_data, 1, file_size, f);
     fclose(f);
     bool ret = LoadTextureFromMemory(file_data, file_size, out_texture, out_width, out_height);
@@ -87,11 +86,10 @@ bool LoadTextureFromFile(const char* file_name, GLuint* out_texture, int* out_wi
     return ret;
 }
 
-
 // Main code
-int main(int, char**)
-{ 
-   
+int main(int, char **)
+{
+
     // Setup SDL
     // [If using SDL_MAIN_USE_CALLBACKS: all code below until the main loop starts would likely be your SDL_AppInit() function]
     if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_GAMEPAD))
@@ -103,28 +101,28 @@ int main(int, char**)
     // Decide GL+GLSL versions
 #if defined(IMGUI_IMPL_OPENGL_ES2)
     // GL ES 2.0 + GLSL 100 (WebGL 1.0)
-    const char* glsl_version = "#version 100";
+    const char *glsl_version = "#version 100";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
 #elif defined(IMGUI_IMPL_OPENGL_ES3)
     // GL ES 3.0 + GLSL 300 es (WebGL 2.0)
-    const char* glsl_version = "#version 300 es";
+    const char *glsl_version = "#version 300 es";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
 #elif defined(__APPLE__)
     // GL 3.2 Core + GLSL 150
-    const char* glsl_version = "#version 150";
+    const char *glsl_version = "#version 150";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG); // Always required on Mac
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
 #else
     // GL 3.0 + GLSL 130
-    const char* glsl_version = "#version 130";
+    const char *glsl_version = "#version 130";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
@@ -137,7 +135,7 @@ int main(int, char**)
     SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
     float main_scale = SDL_GetDisplayContentScale(SDL_GetPrimaryDisplay());
     SDL_WindowFlags window_flags = SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIDDEN | SDL_WINDOW_HIGH_PIXEL_DENSITY;
-    SDL_Window* window = SDL_CreateWindow("Dear ImGui SDL3+OpenGL3 example", (int)(1280 * main_scale), (int)(800 * main_scale), window_flags);
+    SDL_Window *window = SDL_CreateWindow("Dear ImGui SDL3+OpenGL3 example", (int)(1280 * main_scale), (int)(800 * main_scale), window_flags);
     if (window == nullptr)
     {
         printf("Error: SDL_CreateWindow(): %s\n", SDL_GetError());
@@ -158,18 +156,19 @@ int main(int, char**)
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
-    ImGuiIO& io = ImGui::GetIO(); (void)io;
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+    ImGuiIO &io = ImGui::GetIO();
+    (void)io;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // Enable Keyboard Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
 
     // Setup Dear ImGui style
     ImGui::StyleColorsDark();
-    //ImGui::StyleColorsLight();
+    // ImGui::StyleColorsLight();
 
     // Setup scaling
-    ImGuiStyle& style = ImGui::GetStyle();
-    style.ScaleAllSizes(main_scale);        // Bake a fixed style scale. (until we have a solution for dynamic style scaling, changing this requires resetting Style + calling this again)
-    style.FontScaleDpi = main_scale;        // Set initial font scale. (using io.ConfigDpiScaleFonts=true makes this unnecessary. We leave both here for documentation purpose)
+    ImGuiStyle &style = ImGui::GetStyle();
+    style.ScaleAllSizes(main_scale); // Bake a fixed style scale. (until we have a solution for dynamic style scaling, changing this requires resetting Style + calling this again)
+    style.FontScaleDpi = main_scale; // Set initial font scale. (using io.ConfigDpiScaleFonts=true makes this unnecessary. We leave both here for documentation purpose)
 
     // Setup Platform/Renderer backends
     ImGui_ImplSDL3_InitForOpenGL(window, gl_context);
@@ -177,46 +176,50 @@ int main(int, char**)
 
     int width = 980;
     int height = 480;
-    const char *scene_file = "../libs/Ray-Tracing/prove_txt/prova1.txt";
+
+    int current_scene_index = 1;
+    const int max_scenes = 11; 
+
+    char scene_file_buffer[256];
+    snprintf(scene_file_buffer, 256, "../libs/Ray-Tracing/prove_txt/prova%d.txt", current_scene_index);
+
 
     Color *pixel_data = (Color *)malloc(width * height * sizeof(Color));
-    if (pixel_data == NULL) {
+    if (pixel_data == NULL)
+    {
         printf("Errore nell'allocazione della memoria\n");
         exit(EXIT_FAILURE);
     }
     memset(pixel_data, 0, width * height * sizeof(Color));
 
     Scene *scene = create_empty_scene();
-    if (scene == NULL) {
+    if (scene == NULL)
+    {
         printf("Errore nell'allocazione della memoria\n");
         exit(EXIT_FAILURE);
     }
-    if ( read_scene(scene_file, scene) != 0) {
+
+    if (read_scene(scene_file_buffer, scene) != 0)
+    {
         printf("Errore nel caricamento della scena\n");
         delete_scene(scene);
         exit(EXIT_FAILURE);
     }
 
+    // Render the scene
     omp_render_scene(scene, pixel_data, width, height);
-
     // Create a OpenGL texture identifier
     GLuint image_texture;
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);
 
-
     // Setup filtering parameters for display
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    // Upload pixels into texture
-    glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, pixel_data);
-    free(pixel_data);
-    delete_scene(scene);
-
-    
-
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 4); // Rimetti il default (buona norma)
 
     // Load Fonts
     // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
@@ -226,18 +229,20 @@ int main(int, char**)
     // - Read 'docs/FONTS.md' for more instructions and details. If you like the default font but want it to scale better, consider using the 'ProggyVector' from the same author!
     // - Remember that in C/C++ if you want to include a backslash \ in a string literal you need to write a double backslash \\ !
     // - Our Emscripten build process allows embedding fonts to be accessible at runtime from the "fonts/" folder. See Makefile.emscripten for details.
-    //style.FontSizeBase = 20.0f;
-    //io.Fonts->AddFontDefault();
-    //io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\segoeui.ttf");
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/DroidSans.ttf");
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Roboto-Medium.ttf");
-    //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Cousine-Regular.ttf");
-    //ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf");
-    //IM_ASSERT(font != nullptr);
+    // style.FontSizeBase = 20.0f;
+    // io.Fonts->AddFontDefault();
+    // io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\segoeui.ttf");
+    // io.Fonts->AddFontFromFileTTF("../../misc/fonts/DroidSans.ttf");
+    // io.Fonts->AddFontFromFileTTF("../../misc/fonts/Roboto-Medium.ttf");
+    // io.Fonts->AddFontFromFileTTF("../../misc/fonts/Cousine-Regular.ttf");
+    // ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf");
+    // IM_ASSERT(font != nullptr);
 
     // Our state
     bool show_demo_window = true;
     bool show_another_window = false;
+    bool show_render_window = false;
+
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -288,16 +293,16 @@ int main(int, char**)
             static float f = 0.0f;
             static int counter = 0;
 
-            ImGui::Begin("UEEE");                          // Create a window called "Hello, world!" and append into it.
+            ImGui::Begin("UEEE"); // Create a window called "Hello, world!" and append into it.
 
-            ImGui::Text("CIAO FRANCIS ");               // Display some text (you can use a format strings too)
-            ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
+            ImGui::Text("CIAO FRANCIS ");                      // Display some text (you can use a format strings too)
+            ImGui::Checkbox("Demo Window", &show_demo_window); // Edit bools storing our window open/close state
             ImGui::Checkbox("Another Window", &show_another_window);
 
-            ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float using a slider from 0.0f to 1.0f
-            ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
+            ImGui::SliderFloat("float", &f, 0.0f, 1.0f);             // Edit 1 float using a slider from 0.0f to 1.0f
+            ImGui::ColorEdit3("clear color", (float *)&clear_color); // Edit 3 floats representing a color
 
-            if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
+            if (ImGui::Button("Button")) // Buttons return true when clicked (most widgets return true when edited/activated)
                 counter++;
             ImGui::SameLine();
             ImGui::Text("counter = %d", counter);
@@ -309,18 +314,53 @@ int main(int, char**)
         // 3. Show another simple window.
         if (show_another_window)
         {
-            ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
+            ImGui::Begin("Another Window", &show_another_window); // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
             ImGui::Text("FRANCIS");
             if (ImGui::Button("Close Me"))
                 show_another_window = false;
             ImGui::End();
         }
-        ImGui::Begin("OpenGL Texture Text");
-        ImGui::Text("pointer = %x", image_texture);
-        ImGui::Text("size = %d x %d", width, height);
-        ImGui::Image((ImTextureID)(intptr_t)image_texture, ImVec2(width, height));
-        ImGui::End();
-     
+
+        ImGui::Checkbox("Render Scene", &show_render_window);
+
+        if (ImGui::Button("Load Next Scene"))
+        {
+            current_scene_index++;
+            if (current_scene_index > max_scenes)
+                current_scene_index = 1;
+            delete_scene(scene);
+            scene = create_empty_scene();
+            if (scene == NULL)
+            {
+                printf("Errore nell'allocazione della memoria\n");
+                exit(EXIT_FAILURE);
+            }
+            if (read_scene(scene_file_buffer, scene) != 0)
+            {
+                printf("Errore nel caricamento della scena\n");
+                delete_scene(scene);
+                exit(EXIT_FAILURE);
+            }
+
+            snprintf(scene_file_buffer, 256, "../libs/Ray-Tracing/prove_txt/prova%d.txt", current_scene_index);
+            omp_render_scene(scene, pixel_data, width, height);
+            // Update OpenGL texture with new pixel data
+            glBindTexture(GL_TEXTURE_2D, image_texture);
+            glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+            glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, pixel_data);
+            glPixelStorei(GL_UNPACK_ALIGNMENT, 4); // Rimetti il default (buona norma)
+        }
+
+        if (show_render_window)
+        {
+            ImGui::Begin("OpenGL Texture Window", &show_render_window);
+            ImGui::Text("Mostro la Scena %d", current_scene_index);
+            ImGui::Image((ImTextureID)(intptr_t)image_texture, ImVec2(width, height));
+            ImGui::End();
+        }
+
+        
+        
         // Rendering
         ImGui::Render();
         glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
@@ -328,22 +368,24 @@ int main(int, char**)
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         SDL_GL_SwapWindow(window);
-
-
     }
-#ifdef __EMSCRIPTEN__
+    
+    #ifdef __EMSCRIPTEN__
     EMSCRIPTEN_MAINLOOP_END;
-#endif
-
+    #endif
+    
     // Cleanup
     // [If using SDL_MAIN_USE_CALLBACKS: all code below would likely be your SDL_AppQuit() function]
+    free(pixel_data);
+    delete_scene(scene);
+    glDeleteTextures(1, &image_texture);
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplSDL3_Shutdown();
     ImGui::DestroyContext();
-
+    
     SDL_GL_DestroyContext(gl_context);
     SDL_DestroyWindow(window);
     SDL_Quit();
-
+    
     return 0;
 }
