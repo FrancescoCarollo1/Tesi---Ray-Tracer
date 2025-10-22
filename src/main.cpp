@@ -213,6 +213,16 @@ int main(int, char **)
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);
 
+    // Setup filtering parameters for display
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 4); 
+
+    
+
     GLuint image_texture2;
     glGenTextures(1, &image_texture2);
     glBindTexture(GL_TEXTURE_2D, image_texture2);
@@ -224,7 +234,7 @@ int main(int, char **)
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-    glPixelStorei(GL_UNPACK_ALIGNMENT, 4); // Rimetti il default (buona norma)
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 4); 
 
     // Load Fonts
     // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them.
@@ -335,7 +345,7 @@ int main(int, char **)
             ImGui::Text("This is a random image.");
 
 
-            for (int i = 0; i < width * height * 3; i++)
+            for (int i = 0; i < 256 * 256 * 3; i++)
                 random_image_data[i] = rand() % 256;
             
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 256, 256, 0, GL_RGB, GL_UNSIGNED_BYTE, random_image_data);
