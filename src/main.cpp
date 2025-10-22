@@ -28,12 +28,12 @@
 
 extern "C"
 {
-    #include "scene.h"
-    #include "render.h"
-    #include "ppm.h"
-    #include "color.h"
+#include "scene.h"
+#include "render.h"
+#include "ppm.h"
+#include "color.h"
+#include <cstdlib>
 }
-
 
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromMemory(const void *data, size_t data_size, GLuint *out_texture, int *out_width, int *out_height)
@@ -178,11 +178,11 @@ int main(int, char **)
     int height = 480;
 
     int current_scene_index = 1;
-    const int max_scenes = 11; 
+    const int max_scenes = 11;
 
+    char random_image_data[256 * 256 * 3];
     char scene_file_buffer[256];
     snprintf(scene_file_buffer, 256, "../libs/Ray-Tracing/prove_txt/prova%d.txt", current_scene_index);
-
 
     Color *pixel_data = (Color *)malloc(width * height * sizeof(Color));
     if (pixel_data == NULL)
@@ -213,6 +213,11 @@ int main(int, char **)
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);
 
+    GLuint image_texture2;
+    glGenTextures(1, &image_texture2);
+    glBindTexture(GL_TEXTURE_2D, image_texture2);
+
+
     // Setup filtering parameters for display
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -242,6 +247,7 @@ int main(int, char **)
     bool show_demo_window = true;
     bool show_another_window = false;
     bool show_render_window = false;
+    bool show_random_image_window = false;
 
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
@@ -298,6 +304,7 @@ int main(int, char **)
             ImGui::Text("CIAO FRANCIS ");                      // Display some text (you can use a format strings too)
             ImGui::Checkbox("Demo Window", &show_demo_window); // Edit bools storing our window open/close state
             ImGui::Checkbox("Another Window", &show_another_window);
+            ImGui::Checkbox("Random Image", &show_random_image_window);
 
             ImGui::SliderFloat("float", &f, 0.0f, 1.0f);             // Edit 1 float using a slider from 0.0f to 1.0f
             ImGui::ColorEdit3("clear color", (float *)&clear_color); // Edit 3 floats representing a color
@@ -318,6 +325,21 @@ int main(int, char **)
             ImGui::Text("FRANCIS");
             if (ImGui::Button("Close Me"))
                 show_another_window = false;
+            ImGui::End();
+        }
+
+        // 4. Show random image window
+        if (show_random_image_window)
+        {
+            ImGui::Begin("Random Image", &show_random_image_window);
+            ImGui::Text("This is a random image.");
+
+
+            for (int i = 0; i < width * height * 3; i++)
+                random_image_data[i] = rand() % 256;
+            
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 256, 256, 0, GL_RGB, GL_UNSIGNED_BYTE, random_image_data);
+            ImGui::Image((ImTextureID)(intptr_t)image_texture2, ImVec2(256, 256));
             ImGui::End();
         }
 
@@ -359,8 +381,6 @@ int main(int, char **)
             ImGui::End();
         }
 
-        
-        
         // Rendering
         ImGui::Render();
         glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
@@ -369,11 +389,11 @@ int main(int, char **)
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         SDL_GL_SwapWindow(window);
     }
-    
-    #ifdef __EMSCRIPTEN__
+
+#ifdef __EMSCRIPTEN__
     EMSCRIPTEN_MAINLOOP_END;
-    #endif
-    
+#endif
+
     // Cleanup
     // [If using SDL_MAIN_USE_CALLBACKS: all code below would likely be your SDL_AppQuit() function]
     free(pixel_data);
@@ -382,10 +402,10 @@ int main(int, char **)
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplSDL3_Shutdown();
     ImGui::DestroyContext();
-    
+
     SDL_GL_DestroyContext(gl_context);
     SDL_DestroyWindow(window);
     SDL_Quit();
-    
+
     return 0;
 }
