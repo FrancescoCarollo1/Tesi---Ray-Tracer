@@ -23,7 +23,7 @@
 #endif
 
 #include "stb_image.h"
-
+#include <chrono>
 #include <vector>
 
 extern "C"
@@ -173,6 +173,7 @@ int main(int, char **)
     // Setup Platform/Renderer backends
     ImGui_ImplSDL3_InitForOpenGL(window, gl_context);
     ImGui_ImplOpenGL3_Init(glsl_version);
+    double last_render_time_s = 0.0;
 
     int width = 980;
     int height = 480;
@@ -206,8 +207,18 @@ int main(int, char **)
         exit(EXIT_FAILURE);
     }
 
-    // Render the scene
+    // Misura del tempo di rendering iniziale
+    auto start_time = std::chrono::high_resolution_clock::now();
+
+    printf("Rendering scena iniziale...\n");
     omp_render_scene(scene, pixel_data, width, height);
+
+    auto end_time = std::chrono::high_resolution_clock::now();
+
+    auto duration = std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time);
+    last_render_time_s = (double)duration.count();
+    printf("Render iniziale completato in: %.0f s\n", last_render_time_s);
+
     // Create a OpenGL texture identifier
     GLuint image_texture;
     glGenTextures(1, &image_texture);
@@ -375,7 +386,17 @@ int main(int, char **)
             }
 
             snprintf(scene_file_buffer, 256, "../libs/Ray-Tracing/prove_txt/prova%d.txt", current_scene_index);
+            
+            // Misura del tempo di rendering del pulsante
+            auto start = std::chrono::high_resolution_clock::now();
+
             omp_render_scene(scene, pixel_data, width, height);
+
+            auto end = std::chrono::high_resolution_clock::now();
+            auto duration = std::chrono::duration_cast<std::chrono::seconds>(end - start);
+            last_render_time_s = (double)duration.count();
+            printf("Nuovo render completato in: %.0f secondi\n", last_render_time_s);
+
             // Update OpenGL texture with new pixel data
             glBindTexture(GL_TEXTURE_2D, image_texture);
             glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
@@ -388,6 +409,9 @@ int main(int, char **)
             ImGui::Begin("OpenGL Texture Window", &show_render_window);
             ImGui::Text("Mostro la Scena %d", current_scene_index);
             ImGui::Image((ImTextureID)(intptr_t)image_texture, ImVec2(width, height));
+
+            ImGui::Text("Tempo per il render: %.0f secondi", last_render_time_s);
+            
             ImGui::End();
         }
 
