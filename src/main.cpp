@@ -233,8 +233,9 @@ int main(int, char **) {
         }
 
         // --- RENDER GPU ---
+        // --- RENDER GPU ---
         if (use_gpu_render) {
-            // 1. BIND FRAMEBUFFER (
+            // 1. Disegna su Texture
             accumFBO.bind();
             
             // Se è il primo frame, pulisci
@@ -242,7 +243,7 @@ int main(int, char **) {
                 glClearColor(0,0,0,1); glClear(GL_COLOR_BUFFER_BIT);
             }
 
-            // Abilita Blending per Accumulo 
+            // Abilita Blending per Accumulo
             glEnable(GL_BLEND);
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -264,9 +265,11 @@ int main(int, char **) {
             rayShader.setFloat("u_time", SDL_GetTicks() / 1000.0f);
             rayShader.setInt("u_frame_index", gpu_frame_index);
 
-            // Passa Sfere
-            int count = scene->num_spheres;
+            // --- INVIO SFERE ---
+            int count = scene->num_spheres; 
+            if (count > 64) count = 64;
             rayShader.setInt("u_num_spheres", count);
+            
             for (int i = 0; i < count; i++) {
                 std::string base = "u_spheres[" + std::to_string(i) + "]";
                 rayShader.setVec3(base + ".center", scene->spheres[i].center.x, scene->spheres[i].center.y, scene->spheres[i].center.z);
@@ -276,10 +279,29 @@ int main(int, char **) {
                 rayShader.setFloat(base + ".param", (float)scene->spheres[i].mat_param);
             }
 
+            // --- INVIO TRIANGOLI---
+            int tri_count = scene->num_triangles;
+            if (tri_count > 64) tri_count = 64; // Max definito nello shader
+            rayShader.setInt("u_num_triangles", tri_count);
+
+            for (int i = 0; i < tri_count; i++) {
+                std::string base = "u_triangles[" + std::to_string(i) + "]";
+                
+                // Vertici
+                rayShader.setVec3(base + ".v0", scene->triangles[i].v0.x, scene->triangles[i].v0.y, scene->triangles[i].v0.z);
+                rayShader.setVec3(base + ".v1", scene->triangles[i].v1.x, scene->triangles[i].v1.y, scene->triangles[i].v1.z);
+                rayShader.setVec3(base + ".v2", scene->triangles[i].v2.x, scene->triangles[i].v2.y, scene->triangles[i].v2.z);
+                
+                // Materiale
+                rayShader.setVec3(base + ".color", (float)scene->triangles[i].color.r, (float)scene->triangles[i].color.g, (float)scene->triangles[i].color.b);
+                rayShader.setInt(base + ".material", (int)scene->triangles[i].material);
+                rayShader.setFloat(base + ".param", (float)scene->triangles[i].mat_param);
+            }
+            // -------------------------------------
+
             glBindVertexArray(VAO);
             glDrawArrays(GL_TRIANGLES, 0, 6);
 
-    
             glDisable(GL_BLEND);
             accumFBO.unbind();
             
@@ -290,6 +312,7 @@ int main(int, char **) {
             glBindFramebuffer(GL_READ_FRAMEBUFFER, 0);
 
             gpu_frame_index++;
+        
         } else {
             // Se non usiamo la GPU, puliamo lo schermo normale per disegnare l'imgui
             glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
